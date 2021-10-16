@@ -1,0 +1,9 @@
+Timeline
+
+[ ] - page 1 (13:30)
+[ ] - page 2 (14:00)
+[ ] - page 3 (14:30)
+
+[ ] - page 1: functionality (15:00)
+[ ] - page 2: functionality (16:00)
+[ ] - page 3: functionality (16:30)

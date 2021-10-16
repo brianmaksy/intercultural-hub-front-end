@@ -1,0 +1,133 @@
+:root {
+	--primary-color: #e74c3c;
+	--secondary-color: #ecf0f1;
+	--selected-color: #bdc3c7;
+	--white: #fff;
+}
+
+* { box-sizing: border-box; font-family: arial; margin: 0; padding: 0; }
+
+body {}
+input { font: inherit; padding: 5px; }
+
+.options {
+	display: flex;
+	justify-content: space-between;
+}
+.options > a { padding: 10px; }
+.options .cta {
+	background: var(--primary-color);
+	border-radius: 25px;
+	color: var(--white);
+	cursor: pointer;
+	padding: 10px 25px;
+}
+
+.home {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	text-align: center;
+	width: 100vw;
+}
+.home input { display: block; }
+.home__search {  }
+.home__dunno {}
+.home__dunno button {
+	background: #e74c3c;
+	border: 0;
+	border-radius: 25px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 10px 50px;
+}
+.home__dunno button span { display: block; margin-bottom: 5px; }
+.home__dunno button span:last-of-type { margin-bottom: 0; }
+
+.home__help {}
+.home__help a { cursor: pointer; text-decoration: underline; }
+
+.home__list { background: #ecf0f1; border-radius: 25px; }
+.home__list > div {
+	background: #e74c3c;
+	border-radius: 25px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px;
+	padding: 5px 25px;
+}
+
+.home__result { height: 300px; overflow-y: auto; padding: 10px 0; }
+.home__result > div {
+	background: #ecf0f1;
+	border-radius: 25px;	
+	color: #555;
+	cursor: pointer;
+	margin-bottom: 10px;
+	padding: 5px 25px;
+	width: 100%;
+}
+.home__result > .selected { background: #bdc3c7; }
+
+
+.training {}
+.training__options { background: var(--secondary-color); }
+.training__options > div { cursor: pointer; padding: 10px; }
+.training__options > div.selected { background: var(--selected-color);  }
+
+.training__focuses { background: var(--secondary-color); }
+.training__focuses > div { cursor: pointer; padding: 10px; }
+.training__focuses > div.selected { background: var(--selected-color);  }
+
+.training .skip { text-align: right; }
+.training .skip a { color: var(--primary-color); cursor: pointer; text-decoration: underline; }
+
+.map {
+	display: grid;
+	grid-template-rows: 5vh 90vh;
+}
+.map__content {
+/*	background: var(--white);
+	height:  500px;
+	left: 0;
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width:  200px;
+	z-index: 99;
+*/}
+.map__view {
+  height: 95vh;
+  width: 100vw;
+}
+
+.hub {}
+.hub__location { cursor: pointer; padding: 10px; }
+.hub__location span { padding: 10px; }
+
+.loading {
+	align-items: center;
+	display: flex; 
+	height:  100vh;
+	justify-content: center;
+	width:  100vw;
+}
+
+.result { position: relative; }
+.result__content {
+	background: var(--white);
+	bottom: 0;
+	height: 100px;
+	position: fixed;
+	width:  100vw;
+	z-index: 99;
+}
+.result > .map-view-component {
+	height: 100vh;
+	width: 100vw;
+}
